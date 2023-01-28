@@ -22,3 +22,8 @@ for (let i = 0; i < bobsFollowers.length; i++) {
     }
   }
 };
+console.log("Bob's followers ==> " + bobsFollowers)
+console.log("--------------------------")
+console.log("Tina's followers ==> " + tinasFollowers)
+console.log("--------------------------")
+console.log("mutual followers ==> " + mutualFollowers)
