@@ -1,3 +1,4 @@
+// #### #### ---- LOOP - WHILE ---- #### ####
 // #### #### Testing NEST LOOPING #### ####
 const myArray = [6, 19, 20];
 const yourArray = [19, 81, 2];
@@ -27,3 +28,12 @@ console.log("--------------------------")
 console.log("Tina's followers ==> " + tinasFollowers)
 console.log("--------------------------")
 console.log("mutual followers ==> " + mutualFollowers)
+
+// #### #### ---- LOOP - WHILE ---- #### ####
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+let currentCard
+while (currentCard !== "spade") {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard)
+}
