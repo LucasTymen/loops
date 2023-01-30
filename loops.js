@@ -22,26 +22,26 @@ for (let i = 0; i < bobsFollowers.length; i++) {
       mutualFollowers.push(bobsFollowers[i]);
     }
   }
-};
-console.log("Bob's followers ==> " + bobsFollowers)
-console.log("--------------------------")
-console.log("Tina's followers ==> " + tinasFollowers)
-console.log("--------------------------")
-console.log("mutual followers ==> " + mutualFollowers)
+}
+console.log("Bob's followers ==> " + bobsFollowers);
+console.log("--------------------------");
+console.log("Tina's followers ==> " + tinasFollowers);
+console.log("--------------------------");
+console.log("mutual followers ==> " + mutualFollowers);
 
 // #### #### ---- LOOP - WHILE ---- #### ####
-const cards = ['diamond', 'spade', 'heart', 'club'];
+const cards = ["diamond", "spade", "heart", "club"];
 
-let currentCard
+let currentCard;
 while (currentCard !== "spade") {
   currentCard = cards[Math.floor(Math.random() * 4)];
-  console.log(currentCard)
+  console.log(currentCard);
 }
- console.log(currentCard)
+console.log(currentCard);
 
- // #### #### ---- LOOP - DO  WHILE ---- #### ####
+// #### #### ---- LOOP - DO  WHILE ---- #### ####
 // syntax
-let countString = '';
+let countString = "";
 let i = 0;
 
 do {
@@ -52,17 +52,44 @@ do {
 console.log(countString);
 
 // ##### exemple
-const firstMessage = 'I will print!';
-const secondMessage = 'I will not print!';
+const firstMessage = "I will print!";
+const secondMessage = "I will not print!";
 
 // A do while with a stopping condition that evaluates to false
 do {
- console.log(firstMessage)
+  console.log(firstMessage);
 } while (true === false);
 
 // A while loop with a stopping condition that evaluates to false
-while (true === false){
-  console.log(secondMessage)
-};
+while (true === false) {
+  console.log(secondMessage);
+}
 
 // Write your code below
+let cupsOfSugarNeeded = 2;
+let cupsAdded = 0;
+
+do {
+  cupsAdded++;
+  console.log(cupsAdded);
+} while (cupsAdded < cupsOfSugarNeeded);
+console.log(cupsAdded);
+
+// ########## adding BREAK point
+const rapperArray = [
+  "Lil' Kim",
+  "Jay-Z",
+  "Notorious B.I.G.",
+  "Tupac",
+  "Snoop Dog",
+  "Cypress Hill",
+];
+
+// Write your code below
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    break;
+  }
+}
+console.log("And if you don't know, now you know.");
